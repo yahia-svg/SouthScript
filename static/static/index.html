@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SouthScript Online</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/xterm@5.1.0/css/xterm.css">
+    <link href="/static/assets/Cowboy_Hat.png" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <img src="/static/assets/Cowboy_Hat.png" alt="Cowboy Hat" class="hat-icon">
+            <h1>SouthScript</h1>
+            <div class="nav-links">
+                <a href="#tutorial" class="active">Tutorial</a>
+                <a href="#playground">Playground</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="tutorial" class="page active">
+        <div class="hero">
+            <div class="hero-content">
+                <img src="/static/assets/Cowboy_Hat.png" alt="Cowboy Hat" class="hero-hat">
+                <h2>SouthScript</h2>
+                <p>The most rootin'-tootin' programming language in the West</p>
+            </div>
+        </div>
+        
+        <div class="content">
+            <section class="tutorial-section">
+                <h3>Introduction</h3>
+                <p>SouthScript is a rootin'-tootin' programming language with a Southern twist. It combines familiar programming concepts with a unique Western flair in its syntax and terminology.</p>
+            </section>
+
+            <section class="tutorial-section">
+                <h3>Variables</h3>
+                <p>Variables are declared using the THANG keyword:</p>
+                <div class="code-block">
+                    <pre>THANG x = 5
+THANG name = "Billy Bob"
+THANG is_cowboy = TRUE</pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h3>Data Types</h3>
+                <p>Numbers (integers and floats):</p>
+                <div class="code-block">
+                    <pre>THANG age = 42
+THANG price = 3.99</pre>
+                </div>
+
+                <p>Text strings:</p>
+                <div class="code-block">
+                    <pre>THANG greeting = "Howdy partner!"</pre>
+                </div>
+
+                <p>Boolean values:</p>
+                <div class="code-block">
+                    <pre>THANG is_ready = TRUE
+THANG is_done = FALSE</pre>
+                </div>
+
+                <p>Collections (lists):</p>
+                <div class="code-block">
+                    <pre>THANG numbers = [1, 2, 3]
+THANG mixed = [1, "two", FALSE]</pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h3>Operators</h3>
+                <p>Arithmetic operators:</p>
+                <div class="code-block">
+                    <pre>THANG sum = 5 + 3      # Addition
+THANG diff = 5 - 3     # Subtraction
+THANG product = 5 * 3  # Multiplication
+THANG quotient = 5 / 3 # Division</pre>
+                </div>
+
+                <p>Comparison operators:</p>
+                <div class="code-block">
+                    <pre>THANG is_equal = 5 == 3      # Equal to (false)
+THANG not_equal = 5 != 3     # Not equal to (true)
+THANG less_than = 5 < 3      # Less than (false)
+THANG greater_than = 5 > 3   # Greater than (true)
+THANG less_or_equal = 5 <= 3 # Less than or equal to (false)
+THANG greater_or_equal = 5 >= 3 # Greater than or equal to (true)</pre>
+                </div>
+
+                <p>Logical operators:</p>
+                <div class="code-block">
+                    <pre>THANG and_result = TRUE AN' FALSE  # Logical AND (false)
+THANG or_result = TRUE OR FALSE    # Logical OR (true)
+THANG not_result = AIN'T TRUE      # Logical NOT (false)</pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h3>Control Flow</h3>
+                <p>Conditional statements:</p>
+                <div class="code-block">
+                    <pre>RECKON age >= 21 THEN
+    HOLLER("You can drink")
+MIGHTCOULD age >= 18 THEN
+    HOLLER("You can vote")
+ELSE
+    HOLLER("You're too young")</pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h3>Loops</h3>
+                <p>For loop:</p>
+                <div class="code-block">
+                    <pre>TROT i = 1 T' 5 THEN
+    HOLLER(i)</pre>
+                </div>
+
+                <p>While loop:</p>
+                <div class="code-block">
+                    <pre>THANG count = 0
+WHILES count < 5 THEN
+    HOLLER(count)
+    count = count + 1</pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h3>Functions</h3>
+                <p>Function definition:</p>
+                <div class="code-block">
+                    <pre>FIXIN' greet(name) -> HOLLER("Howdy, " + name)</pre>
+                </div>
+
+                <p>Function call:</p>
+                <div class="code-block">
+                    <pre>greet("Billy Bob")</pre>
+                </div>
+
+                <p>Anonymous functions:</p>
+                <div class="code-block">
+                    <pre>THANG square = FIXIN'(x) -> x * x
+HOLLER(square(5))  # Prints 25</pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h3>Collections</h3>
+                <p>Creating collections:</p>
+                <div class="code-block">
+                    <pre>THANG numbers = [1, 2, 3]
+THANG names = ["Billy", "Bob", "Joe"]</pre>
+                </div>
+
+                <p>Accessing elements:</p>
+                <div class="code-block">
+                    <pre>THANG first = numbers[0]  # Gets 1</pre>
+                </div>
+
+                <p>Modifying collections:</p>
+                <div class="code-block">
+                    <pre>SHOVE(numbers, 4)       # Adds 4 to the end
+THANG last = YANK(numbers, -1)  # Removes and returns last element
+THANG combined = STACKON(numbers, [5, 6])  # Combines two collections</pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h3>Built-in Functions</h3>
+                <p>HOLLER - Prints output:</p>
+                <div class="code-block">
+                    <pre>HOLLER("Hello world!")</pre>
+                </div>
+
+                <p>SPEAKUP - Gets input:</p>
+                <div class="code-block">
+                    <pre>THANG name = SPEAKUP()</pre>
+                </div>
+
+                <p>Collection operations:</p>
+                <div class="code-block">
+                    <pre>SHOVE(numbers, 4)
+THANG last = YANK(numbers, -1)
+THANG combined = STACKON(list1, list2)</pre>
+                </div>
+
+                <p>FIREUP - Run another script:</p>
+                <div class="code-block">
+                    <pre>FIREUP("other_file.ss")</pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h3>Error Handling</h3>
+                <p>SouthScript provides descriptive error messages:</p>
+                <div class="code-block">
+                    <pre>Cattywampus! Runtime Problem: 'x' ain't defined
+File example.ss, line 5, in &lt;main&gt;</pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h3>Complete Example</h3>
+                <div class="code-block">
+                    <pre># Calculate factorial
+FIXIN' factorial(n) ->
+    RECKON n == 0 THEN
+        1
+    ELSE
+        n * factorial(n - 1)
+
+# Main program
+THANG num = SPEAKUP()
+THANG result = factorial(num)
+HOLLER("The factorial of " + num + " is " + result)</pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h3>Conclusion</h3>
+                <p>SouthScript combines the power of a modern programming language with the charm of Southern vernacular. Happy coding, partner! 🤠</p>
+            </section>
+        </div>
+    </div>
+
+    <div id="playground" class="page">
+        <div class="terminal-container">
+            <div id="terminal"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/xterm@5.1.0/lib/xterm.js"></script>
+    <script src="https://unpkg.com/xterm-addon-fit@0.7.0/lib/xterm-addon-fit.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
